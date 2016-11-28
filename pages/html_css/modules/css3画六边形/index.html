@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css3画六边形</title>
+	<style>
+		.wrap {
+			margin: 50px auto;
+			width: 1600px;
+			height: 1000px;
+		}
+		#hex {
+			margin: 0 auto;
+			width: 90%;
+			overflow: hidden;
+			display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+			display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+			display: -ms-flexbox;      /* TWEENER - IE 10 */
+			display: -webkit-flex;     /* NEW - Chrome */
+			display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+			-webkit-flex-direction: column;
+			-moz-flex-direction: column;
+			-ms-flex-direction: column;
+			-o-flex-direction: column; 
+			flex-direction: column;  
+			-webkit-justify-content: center;
+			-moz-justify-content: center;
+			-ms-justify-content: center;
+			-o-justify-content: center;
+			justify-content: center;
+			-webkit-align-items: center;
+			-moz-align-items: center;
+			-ms-align-items: center;
+			-o-align-items: center;
+			align-items: center;
+		}
+
+		.row1, .row2, .row3 {
+			display: -webkit-box; 
+			display: -moz-box;  
+			display: -ms-flexbox;  
+			display: -webkit-flex; 
+			display: flex;  
+			-webkit-justify-content: center;
+			-moz-justify-content: center;
+			-ms-justify-content: center;
+			-o-justify-content: center;
+			justify-content: center;
+		}
+
+		.row1 {
+			width: 16%;
+		}
+
+		.row2 {
+			width: 32%;
+		}
+
+		.row3 {
+			width: 48%;
+		}
+
+		.row2, .row3 {
+			margin-top: -2rem;
+		}
+
+		.rotate {
+			display: -webkit-box; 
+			display: -moz-box;  
+			display: -ms-flexbox;  
+			display: -webkit-flex; 
+			display: flex;  
+			-webkit-justify-content: center;
+			-moz-justify-content: center;
+			-ms-justify-content: center;
+			-o-justify-content: center;
+			justify-content: center;
+			-webkit-align-items: center;
+			-moz-align-items: center;
+			-ms-align-items: center;
+			-o-align-items: center;
+			align-items: center;
+			width: 12rem;
+			height: 12rem;
+		}
+
+		.rotate div {
+			width: 12rem;
+			height: 10.5rem;
+			overflow: hidden;
+		}
+
+		.rotate {
+			transform: rotate(30deg);
+			-ms-transform: rotate(30deg); 	/* IE 9 */
+			-moz-transform: rotate(30deg); 	/* Firefox */
+			-webkit-transform: rotate(30deg); /* Safari 和 Chrome */
+			-o-transform: rotate(30deg); 	/* Opera */
+		}
+
+		.outer {
+			transform: rotate(120deg);
+			-ms-transform: rotate(120deg); 
+			-moz-transform: rotate(120deg); 	
+			-webkit-transform: rotate(120deg);
+			-o-transform: rotate(120deg); 
+			visibility: hidden;
+			display: inline-block;
+		}
+
+		.mid {
+			transform: rotate(-60deg);
+			-ms-transform: rotate(-60deg); 
+			-moz-transform: rotate(-60deg); 	
+			-webkit-transform: rotate(-60deg);
+			-o-transform: rotate(-60deg); 
+			visibility: hidden;
+		}
+
+		.inner {
+			background: #fff;
+			transform: rotate(-60deg);
+			-ms-transform: rotate(-60deg); 
+			-moz-transform: rotate(-60deg); 	
+			-webkit-transform: rotate(-60deg);
+			-o-transform: rotate(-60deg); 
+			visibility: visible;
+			text-align: center;
+			font-size: 28px;
+			display: -webkit-box; 
+			display: -moz-box;  
+			display: -ms-flexbox;  
+			display: -webkit-flex; 
+			display: flex;  
+			-webkit-justify-content: center;
+			-moz-justify-content: center;
+			-ms-justify-content: center;
+			-o-justify-content: center;
+			justify-content: center;
+			-webkit-align-items: center;
+			-moz-align-items: center;
+			-ms-align-items: center;
+			-o-align-items: center;
+			align-items: center;
+			background: #0f0;
+		}
+
+
+		.inner img{
+			width: 7rem;
+			transform: rotate(-30deg);
+			-ms-transform: rotate(-30deg); 
+			-moz-transform: rotate(-30deg); 	
+			-webkit-transform: rotate(-30deg);
+			-o-transform: rotate(-30deg); 
+		}
+	</style>
+</head>
+<body>
+<div class="wrap">
+	<div id="hex">
+		<div class="row1">
+			<div class="rotate">
+				<div class="outer">
+					<div class="mid">
+						<div class="inner"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row2">
+			<div class="rotate">
+				<div class="outer">
+					<div class="mid">
+						<div class="inner blog">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="rotate">
+				<div class="outer">
+					<div class="mid">
+						<div class="inner baidu_ife">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row3">
+			<div class="rotate">
+				<div class="outer">
+					<div class="mid">
+						<div class="inner component">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="rotate">
+				<div class="outer">
+					<div class="mid">
+						<div class="inner app">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="rotate">
+				<div class="outer">
+					<div class="mid">
+						<div class="inner"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

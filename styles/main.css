@@ -1,0 +1,125 @@
+@charset utf-8;
+
+#main {
+	width: 100%;
+	position: relative;
+}
+
+.bg {
+	width: 100%;
+	height: 60rem;
+	background: #fff url(../images/bg.png) no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+
+.mask {
+	padding-top: 12rem;
+	box-sizing: border-box;
+	width: 100%;
+	height: 60rem;
+	background-color: rgba(0, 0, 0, 0.7);
+	color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.mask:after {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: -4rem;
+	left: calc(50% - 2rem);
+	width: 0;
+	height: 0;
+	border: 2rem solid transparent;
+	border-top: 2rem solid rgba(0, 0, 0, 0.7);
+}
+
+.slogan {
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+}
+
+.slogan h2 {
+	margin: 1%;
+	width: 60%;
+	font-size: 5rem;
+	text-shadow: .2rem .2rem .2rem #ccc;
+}
+
+h2.left {
+	float: left;
+	text-align: right;
+	transform: perspective(10rem) rotateY(15deg);
+}
+
+h2.right {
+	float: right;
+	text-align: left;
+	transform: perspective(10rem) rotateY(-15deg);
+}
+
+.slogan h3 {
+	margin-top: 20rem;
+}
+
+.slogan .btn {
+	margin: 5rem 0;
+	height: 10rem;
+}
+
+.slogan a {
+	display: inline-block;
+	margin: 2rem;
+	padding: 0 1rem;
+	width: 12rem;
+	height: 4rem;
+	box-sizing: border-box;
+	font: 1.5rem/4rem 'Arial';
+	text-align: center;
+	border-radius: .5rem;
+	background: #5cb85c;
+	text-shadow: .2rem .2rem .2rem #58a;
+	box-shadow: 0 0 2rem #58a;
+}
+
+.slogan a:hover {
+	background: #4d9d44;
+}
+
+
+
+
+
+
+.tbd {
+	background-color: rgba(255, 255, 255, 0.7);
+	margin-top: 2rem;
+	height: 10rem;
+}
+
+.tbd2 {
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+	overflow: hidden;
+}
+
+.tbd2 li {
+	display: inline-block;
+	margin: 5rem;
+}
+
+
+
+
+
+
+.skill {
+	width: 100%;
+	height: 10rem;
+	border: 1px solid blue;
+}

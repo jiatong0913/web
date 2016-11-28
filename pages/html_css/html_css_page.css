@@ -1,0 +1,76 @@
+@charset utf-8;
+
+html {
+	font-size: 16px;
+	font-family: Helvetica, '微软雅黑', Arial, Verdana, Sans-serif;
+}
+
+/*body {
+	background: #f5f5f5;
+}*/
+
+#main {
+	padding-top: 2rem;
+}
+
+#main .left {
+	margin-left: 3%;
+	width: 40%;
+	height: 40rem;
+	float: left;
+	background: url(images/bg.jpg) no-repeat;
+	background-size: 100%;
+}
+
+.mask {
+	height: 40rem;
+	background: rgba(0, 0, 0, .5);
+}
+
+#item {
+	width: 50%;
+	height: 30rem;
+	color: #fff;
+	background: rgba(200, 200, 200, .5);
+}
+
+#main .right {
+	width: 55%;
+	height: 50rem;
+	float: right;
+}
+
+.left h2 {
+	padding: 1rem 0;
+	height: 3rem;
+	line-height: 3rem;
+	text-indent: 2rem;
+}
+
+#aside {
+	width: 100%;
+}
+
+#aside a {
+	display: block;
+	margin: 1rem 0;
+	text-align: center;
+	font: 1.2rem/1.2 '宋体';
+}
+
+#aside a:hover {
+	background: rgba(200, 200, 200, .7);
+}
+
+
+/*上面设置margin和padding以百分比形式表示，在firefox下显示为0，故此处对firefox做hack*/
+@-moz-document url-prefix()  {
+	.odd div {
+		margin: 0.68rem;
+		padding: 0.5rem;
+	}
+}
+
+
+
+

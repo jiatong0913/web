@@ -1,0 +1,35 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, img, textarea, th, td {
+	marigin: 0;
+	padding: 0;
+}
+
+body {
+	font: 12px/1 '微软雅黑', tahoma, arial, sans-serif;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clear {
+	clear: both;
+	height: 0;
+	overflow: hidden;
+}
+
+html .hide {
+	display: none;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>mission38</title>
+	<style>
+		body, div, table, thead, tbody, tr, th, td, form {
+			margin: 0;
+			padding: 0;
+		}
+		#description {
+			overflow: hidden;
+		}
+		.mission38, .mission39 {
+			width: 50%;
+			height: 500px;
+			box-sizing: border-box;
+			border: 1px dashed #f00;
+			float: left;
+		}
+		.img {
+			width: 95%;
+			height: 300px;
+			overflow: auto;
+		}
+		#wrap {
+			width: 1200px;
+			margin: 50px auto;
+			padding-top: 50px;
+			text-align: center;
+			border: 1px dashed #00f;
+		}
+		#init {
+			display: inline-block;
+		}
+		#form {
+			display: inline-block
+		}
+		.table {
+			font-size: 24px;
+			font-family: '微软雅黑';
+			clear: both;
+		}
+		.thead {
+			background: #000;
+			color: #fff;
+		}
+		.thead th, .tbody td {
+			width: 200px;
+			height: 50px;
+			box-sizing: border-box;
+			border: 1px solid #eee;
+			font-weight: normal;
+		}
+		.tbody {
+			background: #fff;
+			color: #000;
+		}
+		.sort {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: flex;
+			-webkit-flex-direction: column;
+			-moz-flex-direction: column;
+			flex-direction: column;
+			justify-content: space-around;
+			height: 100%;
+			font-size: 12px;
+			position: absolute;
+			top: 0;
+			right: 10%;
+		}
+		.up {
+			display: inline-block;
+			width: 0;
+			height: 0;
+			border: 5px solid transparent;
+			border-top: 8px solid transparent;
+			border-bottom: 8px solid #fff;
+		}
+		.down {
+			display: inline-block;
+			width: 0;
+			height: 0;
+			border: 5px solid transparent;
+			border-bottom: 8px solid transparent;
+			border-top: 8px solid #fff;
+		}
+		#copywrap {
+			margin: 0 auto;
+			width: 1000px;
+			height: 200px;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		#footer {
+			width: 1000px;
+			height: 300px;
+		}
+		#container {
+			margin: 50px auto;
+			width: 1000px;
+			height: 200px;
+			overflow: auto;
+			position: relative;
+		}
+	</style>
+</head>
+<body>
+	<div id="description">
+		<div class="mission38">
+			<h2>Mission38：参考设计图，实现一个支持列排序的表格组件</h2>
+			<p>提供生成表格的接口，表格中的数据，表格样式尽量低耦合</p>
+			<p>可以配置对哪些列支持排序功能，并在表头进行排序按钮的显示，图中的样式为示意参考，可自行设定样式及交互方式</p>
+			<p>提供点击排序按钮后的响应接口，并提供默认的排序方法，当提供的接口没有具体实现时，按默认的排序方法进行排序操作，并更新表格中的数据显示。</p>
+			<div class="img">
+				<img src="mission38.jpg" alt="mission38">
+			</div>
+		</div>
+		<div class="mission39">
+			<h2>Mission39：参考如下设计图，实现一个支持首行冻结的表格组件</h2>
+			<p>当页面向下滚动，使得第一行已经在屏幕外时，则第一行则变成始终固定在屏幕最上方</p>
+			<p>当整个表格都滚动出屏幕时，固定的第一行也消失</p>
+			<div class="img">
+				<img src="mission39.jpg" alt="mission39">
+			</div>
+		</div>
+	</div>
+	<div id="wrap">
+		<button id="init">初始化表格</button>
+		<button id="sort">排序</button>
+		<button id="freeze">冻结首行</button>
+		<form action="" id="form" class="clear">
+			<label for="name">姓名<input type="text" id="name"></label>
+			<label for="chinese">语文<input type="text" id="chinese"></label>
+			<label for="math">数学<input type="text" id="math"></label>
+			<label for="english">英语<input type="text" id="english"></label>
+			<button type="submit" id="submit">添加</button>
+		</form>
+		<div id="container">
+			<div id="copywrap">
+			</div>
+			<div id="footer"></div>
+		</div>
+	</div>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+#container {
+	width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#left {
+	margin-left: 100px;
+	float: left;
+}
+
+#right {
+	margin-right: 100px;
+	float: right;
+}
+
+#left div, #right div {
+	width: 200px;
+	height: 120px;
+	box-sizing: border-box;
+	border: 1px solid #eee;
+	border-top: 20px solid #f2dede;
+	text-align: center;
+	line-height: 100px;
+}
+
+#wrap {
+	margin-left: 50px;
+	width: 300px;
+	float: left;
+	position: relative;
+	border: 1px solid red;
+}
+
+#elevator {
+	width: 200px;
+	height: 100px;
+	background: #a2cd5a;
+	border-top: 20px solid #f2dede;
+	position: absolute;
+	left: 50px;
+	top: 720px;
+	text-align: center;
+}
+
+#status {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+	width: 120px;
+	height: 80px;
+	box-sizing: border-box;
+	border: 1px solid #c6e2ff;
+	float: left;
+}
+
+#direction {
+	margin: 5px;
+	width: 40px;
+	height: 40px;
+}
+
+#floor {
+	margin: 5px;
+	width: 40px;
+	height: 40px;
+}
+
+#innerctrl {
+	display: flex;
+	margin: 10px 0;
+	width: 50px;
+	flex-wrap: wrap-reverse;
+	float: left;
+}
+
+#innerctrl button {
+	margin: 2px;
+	width: 16px;
+	height: 16px;
+	background: #c6e2ff;
+	text-align: center;
+}
+
+#outerctrl {
+	width: 30px;
+	height: 840px;
+	float: right;
+}
+
+#outerctrl div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 30px;
+	height: 120px;
+}
+
+#outerctrl div button {
+	margin: 2px;
+	width: 16px;
+	height: 16px;
+	background: #c6e2ff;
+}

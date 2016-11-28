@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>elevator</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div id="container">
+		<div id="left">
+			<div>701</div>
+			<div>601</div>
+			<div>501</div>
+			<div>401</div>
+			<div>301</div>
+			<div>201</div>
+			<div>101</div>
+		</div>
+		<div id="right">
+			<div>702</div>
+			<div>602</div>
+			<div>502</div>
+			<div>402</div>
+			<div>302</div>
+			<div>202</div>
+			<div>102</div>
+		</div>
+		<div id="wrap">
+			<div id="elevator">
+				<div id="status">
+					<div id="direction"></div>
+					<div id="floor"></div>
+				</div>
+				<div id="innerctrl">
+					<button index = "1">1</button>
+					<button index = "2">2</button>
+					<button index = "3">3</button>
+					<button index = "4">4</button>
+					<button index = "5">5</button>
+					<button index = "6">6</button>
+					<button index = "7">7</button>
+				</div>
+			</div>
+			<div id="outerctrl">
+				<div>
+					<button index = "7" direction = "-1">下</button>
+				</div>
+				<div>
+					<button index = "6" direction = "1">上</button>
+					<button index = "6" direction = "-1">下</button>
+				</div>
+				<div>
+					<button index = "5" direction = "1">上</button>
+					<button index = "5" direction = "-1">下</button>
+				</div>
+				<div>
+					<button index = "4" direction = "1">上</button>
+					<button index = "4" direction = "-1">下</button>
+				</div>
+				<div>
+					<button index = "3" direction = "1">上</button>
+					<button index = "3" direction = "-1">下</button>
+				</div>
+				<div>
+					<button index = "2" direction = "1">上</button>
+					<button index = "2" direction = "-1">下</button>
+				</div>
+				<div>
+					<button index = "1" direction = "1">上</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type = "text/javascript" src = "http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+	<script type = "text/javascript" src = "main.js"></script>
+</body>
+</html>

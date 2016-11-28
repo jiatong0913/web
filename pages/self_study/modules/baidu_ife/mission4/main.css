@@ -1,0 +1,42 @@
+body {
+    overflow：hidden;
+}
+
+#wrapper {
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+}
+
+#container {
+    width: 400px;
+    height: 200px;
+    position: relative;
+    background: #ccc;
+}
+
+#left_top {
+    width: 50px;
+    height: 50px;
+    background: #fc0;
+    border: 0;
+    border-bottom-right-radius: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#right_bottom {
+    width: 50px;
+    height: 50px;
+    background: #fc0;
+    border: 0;
+    border-top-left-radius: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

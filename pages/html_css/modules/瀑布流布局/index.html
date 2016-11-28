@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>waterfall layout</title>
+	<style>
+		#container {
+			margin: 0 auto;
+			position: relative;
+		}
+		.clear {
+			zoom: 1;
+		}
+		.clear:after {
+			content: '';
+			display: block;
+			height: 0;
+			visibility: hidden;
+			clear: both;
+		}
+		.box {
+			padding: 20px;
+			box-sizing: border-box;
+			height: auto;
+			background: #fff;
+			position: absolute;
+		}
+		.pic {
+			padding: 20px;
+			border: 1px solid #ccc;
+			background: #eee;
+		}
+		.pic img {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			background: #fff;
+		}
+	</style>
+</head>
+<body>
+	<div id="container" class="clear">
+		<div class="box">
+			<div class="pic">
+				<img src="0.png" alt="草薙京">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="1.png" alt="K Dash">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="2.png" alt="库拉">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="3.png" alt="矢吹真吾">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="4.png" alt="麻宫雅典娜">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="5.png" alt="不知火舞">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="6.png" alt="丽安娜">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="7.png" alt="坂崎百合">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="8.png" alt="克里斯">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="9.png" alt="八神庵">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="10.png" alt="特瑞·博格">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="11.png" alt="洛克">
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

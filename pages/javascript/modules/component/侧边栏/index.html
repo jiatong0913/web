@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>sidebar</title>
+	<style>
+		html, body, header, aside, div, ul, li {
+			margin: 0;
+			padding: 0;
+		}
+		ul {
+			list-style: none;
+		}
+		a {
+			text-decoration: none;
+		}
+		.clear {
+			zoom: 1;
+		}
+		.clear:after {
+			display: block;
+			content:'';
+			height: 0;
+			visibility: hidden;
+			clear: both;
+		}
+		body {
+			background: #ccc;
+		}
+
+		/*左侧sidebar，鼠标移动实现显示和隐藏*/
+		#sidebar1 {
+			position: fixed;
+			top: 0;
+			left: -10%;
+			bottom: 0;
+			width: 10%;
+			background: #333;
+			transition: all 0.5s ease-in-out;
+		}
+		.left {
+			margin: 30px 0 0 10px;
+		}
+		.left li {
+			margin-top: 30px;
+			margin-left: 20px;
+		}
+		.left a {
+			color: #fff;
+			font-size: 14px;
+		}
+
+
+		/*右侧sidebar，点击实现显示和隐藏*/
+		#show {
+			margin-top: 5px;
+			margin-right: 5px;
+			width: 20px;
+			height: 20px;
+			color: #000;
+			font-size: 14px;
+			cursor: pointer;
+			float: right;
+		}
+		#hide {
+			margin-top: 5px;
+			margin-left: 5px;
+			width: 20px;
+			height: 20px;
+			color: #fff;
+			font-size: 14px;
+			cursor: pointer;
+		}
+		#sidebar2 {
+			position: fixed;
+			top: 0;
+			right: -10%;
+			bottom: 0;
+			width: 10%;
+			background: #333;
+			transition: all 0.5s ease-in-out;
+		}
+		.right {
+			margin: 30px 0 0 10px;
+		}
+		.right li {
+			margin-top: 30px;
+			margin-left: 20px;
+		}
+		.right a {
+			color: #fff;
+			font-size: 14px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div id="haha"></div>
+		<div id = 'show'>&lt;&lt;</div>
+	</header>
+	<aside id="sidebar1">
+		<nav id = 'left'>
+			<ul class = 'left'>
+				<li><a href="#">菜单一</a></li>
+				<li><a href="#">菜单二</a></li>
+				<li><a href="#">菜单三</a></li>
+				<li><a href="#">菜单四</a></li>
+			</ul>
+		</nav>
+	</aside>
+	<aside id = 'sidebar2'>
+		<nav id = 'right'>
+			<div id = "hide">&gt;&gt;</div>
+			<ul class = 'right'>
+				<li><a href="#">菜单一</a></li>
+				<li><a href="#">菜单二</a></li>
+				<li><a href="#">菜单三</a></li>
+				<li><a href="#">菜单四</a></li>
+			</ul>
+		</nav>
+	</aside>
+	<script>
+		window.onload = function() {
+			var sidebar1 = document.getElementById('sidebar1');
+			var show = document.getElementById('show');
+			var hide = document.getElementById('hide');
+			eventUtil.addHandler(show, 'click', sidebar2Show);
+			eventUtil.addHandler(hide, 'click', sidebar2Hide);
+			eventUtil.addHandler(document, 'mousemove', sidebar1Show);
+			eventUtil.addHandler(sidebar1, 'mouseout', sidebar1Hide);
+		}
+
+		function sidebar2Show() {
+			var sidebar2 = document.getElementById('sidebar2');
+			sidebar2.style.right = '0';
+		}
+		function sidebar2Hide() {
+			var sidebar2 = document.getElementById('sidebar2');
+			sidebar2.style.right = '-10%';
+		}
+		function sidebar1Show() {
+			var e = eventUtil.getEvent(e);
+			var x = e.pageX;
+			var sidebar1 = document.getElementById('sidebar1');
+			if (x == 0) {
+				sidebar1.style.left = '0';
+			}
+		}
+		function sidebar1Hide() {
+			this.style.left = '-10%';
+		}
+		// 添加事件和移除事件函数
+		var eventUtil = {
+
+			addHandler: function(ele, event, handler) {
+				if (ele.addEventListener) {
+					ele.addEventListener(event, handler, false);
+				} else if (ele.attachment) {
+					ele.attachment('on' + event, handler);
+				} else {
+					ele['on' + event] = handler;
+				}
+			},
+
+			removeHandler: function(ele, event, handler) {
+				if (ele.removeEventListener) {
+					ele.removeEventListener(event, handler, false);
+				} else if (ele.detachment) {
+					ele.detachment('on' + event, handler);
+				} else {
+					ele['on' + event] = null;
+				}
+			},
+
+			getEvent: function(event) {
+				return event || window.event;
+			},
+
+			getTarget: function(event) {
+				return event.target || event.srcElement;
+			},
+
+			preventDefault: function(event) {
+				if (event.preventDefault) {
+					event.preventDefault();
+				} else {
+					event.returnValue = false;
+				}
+			},
+
+			stopPropagation: function(event) {
+				if (event.stopPropagation) {
+					event.stopPropagation();
+				} else {
+					event.cancelBubble = true;
+				}
+			}
+		} 
+	</script>
+</body>
+</html>

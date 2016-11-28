@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>mission33</title>
+	<style>
+		#description {
+			overflow: hidden;
+		}
+		.mission23 {
+			width: 50%;
+			height: 500px;
+			box-sizing: border-box;
+			border: 1px dashed #f00;
+			float: left;
+		}
+		.img {
+			width: 95%;
+			height: 300px;
+			overflow: auto;
+		}
+		
+
+		#container {
+			margin: 0 auto;
+			width: 80%;
+		}
+		#wrap {
+			margin: 20px auto;
+			width: 440px;
+		}
+		#area {
+			width: 440px;
+			height: 440px;
+			position: relative;
+		}
+		.axis_x {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 400px;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			display: flex;
+			justify-content: space-around;
+		}
+		.axis_y {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 40px;
+			height: 400px;
+			line-height: 40px;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+
+		}
+		.map {
+			width: 400px;
+			height: 400px;
+			border: 1px solid #000;
+			background: #fff;
+			background: 
+				linear-gradient(#ccc 1px, transparent 0), 
+				linear-gradient(90deg, #ccc 1px, transparent 0);
+			background-size: 40px 40px; 
+			position: absolute;
+			right: 0;
+			bottom: 0;
+		}
+		#square {
+			width: 40px;
+			height: 40px;
+			box-sizing: border-box;
+			border-top: 10px solid #00f;
+			background: #f00;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+		}
+		.control {
+			margin: 20px 0 0 40px;
+		}
+	</style>
+</head>
+<body>
+	<div id="description">
+		<div class="mission23">
+			<h2>Mission23：参考示例图，在页面中展现一颗二叉树的结构</h2>
+			<p>提供一个按钮，显示开始遍历，点击后，以动画的形式呈现遍历的过程</p>
+			<p>二叉树的遍历算法和方式自定，前序中序后序皆可，但推荐可以提供多种算法的展示（增加多个按钮，每个按钮对应不同的算法）</p>
+			<p>当前被遍历到的节点做一个特殊显示（比如不同的颜色）</p>
+			<p>每隔一段时间（500ms，1s等时间自定）再遍历下一个节点</p>
+			<div class="img">
+				<img src="" alt="mission22">
+			</div>
+		</div>
+	</div>
+	<div id="container">
+		<div id="wrap">
+			<div id="area">
+				<div class="axis_x">
+					<span>1</span>
+					<span>2</span>
+					<span>3</span>
+					<span>4</span>
+					<span>5</span>
+					<span>6</span>
+					<span>7</span>
+					<span>8</span>
+					<span>9</span>
+					<span>10</span>
+				</div>
+				<div class="axis_y">
+					<span>1</span>
+					<span>2</span>
+					<span>3</span>
+					<span>4</span>
+					<span>5</span>
+					<span>6</span>
+					<span>7</span>
+					<span>8</span>
+					<span>9</span>
+					<span>10</span>
+				</div>
+				<div class="map">
+					<div id="square"></div>
+				</div>
+			</div>
+			<div class="control">
+				<input id="input" type="text" name="code">
+				<button id="exec">exec</button>
+			</div>
+		</div>
+	</div>
+	<script text="javascript" src="main.js"></script>
+</body>
+</html>

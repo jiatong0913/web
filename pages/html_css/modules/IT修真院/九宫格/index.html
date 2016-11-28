@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>九宫格</title>
+	<style>
+		.container {
+			position: absolute;
+			margin: auto;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			background: #fff;
+			width: 300px;
+			height: 300px;
+		}
+		.nine_grid {
+			margin: 0;
+			padding: 0;
+			width: 300px;
+			height: 300px;
+			list-style: none;
+			overflow: hidden;
+		}
+		.nine_grid li {
+			margin: 0;
+			padding: 0;
+			float: left;
+			width: 100px;
+			height: 100px;
+			background: #e78326;
+			box-sizing: border-box;
+			border: 2px solid #fff;
+			border-radius: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<ul class="nine_grid">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+</body>
+</html>

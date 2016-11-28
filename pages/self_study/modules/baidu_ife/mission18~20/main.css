@@ -1,0 +1,92 @@
+#description {
+	overflow: hidden;
+}
+.mission18, .mission19, .mission20 {
+	width: 33%;
+	height: 450px;
+	box-sizing: border-box;
+	border: 1px dashed #f00;
+	float: left;
+}
+.img {
+	width: 95%;
+	height: 300px;
+	overflow: auto;
+}
+
+#wrap1 {
+	margin: 20px 0;
+}
+
+button:nth-child(3), button:nth-child(5) {
+	margin-left: 20px;
+}
+
+#container {
+	margin: 50px auto;
+	width: 90%;
+	height: 100px;
+	text-align: center;
+}
+
+.span {
+	display: inline-block;
+	width: 20px;
+	background: #666;
+	color: #fff;
+	text-align: center;
+	vertical-align: bottom;
+}
+
+fieldset {
+	margin: 20px auto;
+}
+
+#area {
+	float: left;
+}
+
+#container2 {
+	float: left;
+	margin-left: 20px;
+}
+
+.clear {
+	zoom: 1;
+}
+
+.clear:after {
+	display: block;
+	content: '';
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+#wrap2, #wrap3 {
+	margin-top: 20px;
+}
+
+.span2 {
+	display: inline-block;
+	margin: 10px;
+	padding: 10px;
+	background: #666;
+	color: #fff;
+	font-size: 20px;
+	line-height: 1.5;
+	text-align: center;
+	vertical-align: bottom;
+}
+
+.hit {
+	display: inline-block;
+	margin: 10px;
+	padding: 10px;
+	color: #f00;
+	background: #cfb53b;
+	font-size: 20px;
+	line-height: 1.5;
+	text-align: center;
+	vertical-align: bottom;
+}

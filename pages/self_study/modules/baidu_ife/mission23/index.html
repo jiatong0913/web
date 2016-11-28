@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>mission22 javascript与树</title>
+	<style>
+		#description {
+			overflow: hidden;
+		}
+		.mission23 {
+			width: 50%;
+			height: 500px;
+			box-sizing: border-box;
+			border: 1px dashed #f00;
+			float: left;
+		}
+		.img {
+			width: 95%;
+			height: 300px;
+			overflow: auto;
+		}
+		
+
+		#container {
+			margin: 0 auto;
+			width: 80%;
+		}
+
+		#root {
+			margin: 0 auto;
+			width: 1000px;
+			height: 500px;
+			border: 1px solid #f00;
+			display: flex;
+		}
+		#root div {
+			padding-right: 10px;
+			height: 60%;
+			box-sizing: border-box;
+			border: 1px solid #00f;
+			display: flex;
+			align-self: center;
+		}
+		.col1 {
+			flex: 3;
+		}
+		.col2 {
+			flex: 2;
+		}
+		.col3 {
+			flex: 1;
+			margin-right: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div id="description">
+		<div class="mission23">
+			<h2>Mission23：参考示例图，在页面中展现一颗二叉树的结构</h2>
+			<p>提供一个按钮，显示开始遍历，点击后，以动画的形式呈现遍历的过程</p>
+			<p>二叉树的遍历算法和方式自定，前序中序后序皆可，但推荐可以提供多种算法的展示（增加多个按钮，每个按钮对应不同的算法）</p>
+			<p>当前被遍历到的节点做一个特殊显示（比如不同的颜色）</p>
+			<p>每隔一段时间（500ms，1s等时间自定）再遍历下一个节点</p>
+			<div class="img">
+				<img src="mission22.jpg" alt="mission22">
+			</div>
+		</div>
+	</div>
+	<div id="container">
+		<div id="control">
+			<button id="traversal">开始遍历</button>
+		</div>
+		<div id="demo">
+			<div id="root">super
+				<div class="col1">cup
+					<div>apple
+						<div>pear</div>
+						<div>pig</div>
+						<div>cola</div>
+						<div>soccer</div>
+					</div>
+					<div>phone</div>
+					<div>phone
+						<div>book</div>
+						<div>school</div>
+					</div>
+				</div>
+				<div class="col2">note
+					<div>human
+						<div>cook</div>
+						<div>oparate</div>
+						<div>man</div>
+					</div>
+					<div>program
+						<div>bement
+							<div>cat</div>
+						</div>
+						<div>glass</div>
+					</div>
+				</div>
+				<div class="col3">fish</div>
+			</div>
+		</div>
+		<div id="query">
+			<textarea></textarea>
+			<button id="search">search</button>
+		</div>
+	</div>
+	<script text="javascript" src="main.js"></script>
+</body>
+</html>

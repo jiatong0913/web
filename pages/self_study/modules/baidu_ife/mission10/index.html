@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+	<title>flex</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		section {
+			margin: 0;
+			padding: 20px;
+			width: calc(100% - 40px);
+			height: 400px;
+			border: 1px solid #0f0;
+			display: flex;
+			display: -webkit-flex;
+			display: -moz-flex;
+			flex-flow: row wrap;
+			-webkit-flex-flow: row wrap;
+			-moz-flex-flow: row wrap;
+			justify-content: space-between;
+			align-items: center;
+			-webkit-align-items: center;
+			-moz-align-items: center;
+		}
+		div {
+			width: 150px;
+		}
+		div:nth-child(1) {
+			height: 120px;
+			border: 1px solid #f00;
+		}
+		div:nth-child(2) {
+			height: 100px;
+			border: 1px solid #f00;
+		}
+		div:nth-child(3) {
+			height: 40px;
+			border: 1px solid #f00;
+		}
+		div:nth-child(4) {
+			height: 200px;
+			border: 1px solid #00f;
+		}
+		@media screen and (max-width: 640px) {
+			div:nth-child(4) {
+				order: 1;
+			}
+			div:nth-child(3) {
+				order: 4;
+			}
+			div:nth-child(1) {
+				order: 2;
+			}
+			div:nth-child(2) {
+				order: 3;
+			}
+			section {
+				margin: 0;
+				padding: 20px;
+				width: calc(100% - 40px);
+				height: 400px;
+				border: 1px solid #00f;
+				display: flex;
+				display: -webkit-flex;
+				display: -moz-flex;
+				flex-flow: row wrap;
+				-webkit-flex-flow: row wrap;
+				-moz-flex-flow: row wrap;
+				justify-content: space-between;
+				align-items: flex-start;
+				-webkit-align-items: flex-start;
+				-moz-align-items: flex-start;
+			}
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</section>
+</body>
+</html>

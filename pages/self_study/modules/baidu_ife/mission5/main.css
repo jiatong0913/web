@@ -1,0 +1,184 @@
+body {
+    font-size: 12px;
+    font-size: "宋体", sans-serif;
+}
+
+body, header, footer, div, ul, li, table, td, tr {
+    margin: 0;
+    padding: 0 
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+.cls {
+    clear: both;
+}
+
+#container {
+    width: 100%;
+    background-color: rgb(222,222,222);
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(51,51,51);
+}
+
+header img {
+    margin-top: 10px;
+}
+
+#nav {
+    float: right;
+    margin: 5px;
+}
+
+#nav li {
+    float: left;
+    width: 60px;
+    margin: 15px 5px;
+    color: #fff;
+}
+
+#wrapper {
+    width: 70%;
+    padding: 10px 20px;
+}
+
+#maintop, #maincenter1, #maincenter2, #maincenter3 {
+    width: 100%;
+    margin: 30px auto;
+    padding: 50px 20px;
+    background-color: #fff;
+    border: 2px solid #888;
+}
+
+p {
+    font-size: 14px;
+    font-family: "Microsoft Yahei";
+    text-indent: 2em;
+    line-height: 28px;
+}
+
+#maincenter1 li {
+    list-style-type: none;
+}
+
+#maincenter2 .goodlookings {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+#maincenter2 .goodlookings li {
+    float: left;
+    margin: 0 10px;
+}
+
+#maincenter2 .goodlookings img {
+    display: block;
+    width: 98px;
+    height: 82px;
+    margin:10px auto;
+}
+
+#maincenter2 span {
+    font-size: 12px;
+}
+
+#maincenter3 table {
+    width: 90%;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-collapse: collapse;  
+}
+
+#maincenter3 table a {
+    color: purple;
+}
+
+#maincenter3 .th {
+    background-color: #333;
+    color: #fff;
+}
+
+#maincenter3 table td {
+    padding-left: 5px;
+}
+
+#maincenter3 .tf {
+    font-weight: 700;
+    background-color: #ccc;
+}
+
+#aside {
+    width: 360px;
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #888;
+}
+
+#aside .border_v {
+    float: left;
+    height: 50px;
+    border-left: 3px solid #ccc;
+}
+
+#aside h2 {
+    float: left;
+    margin: 15px;
+}
+
+#aside .submit {
+    display: block;
+    width: 300px;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    background-color: #059;
+    border: 1px solid #059;
+    border-radius: 5px;
+    margin: 10px auto;
+}
+
+#aside table {
+    margin: 20px auto;
+}
+
+#aside .tdl {
+    text-align: right;
+    height: 30px;
+}
+
+#aside .tdr {
+    text-align: left;
+    padding-left: 10px;
+    height: 30px;
+}
+
+#aside .tdtop {
+    vertical-align: top;
+}
+
+#aside .tdcolor {
+    color: #aaa;
+}
+
+footer {
+    width: 100%;
+    height: 60px;
+    color: #fff;
+    background-color: #000;
+    font-size: 16px;
+    font-family: "Microsoft Yahei";
+    line-height: 16px;
+    text-align: center;
+    padding-top: 10px;
+}
