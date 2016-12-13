@@ -1,0 +1,104 @@
+@charset utf-8;
+
+html, body, div, h1, h2, h3, h4, h5, h6, p, img, input, ol, ul, li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+html {
+	font: 16px/1 "微软雅黑";
+	background: #f5f5f5;
+}
+
+.wrap {
+	width: 1030px;
+	margin: 0px auto;
+	overflow: hidden;
+}
+
+#carrousel {
+	margin-top: 10px;
+}
+
+.c-box {
+	border: 10px solid transparent;
+	height: 450px;
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+}
+
+#slide {
+	position: absolute;
+	top: 0;
+	left: -1010px;
+	width: calc(1010 * 7px);
+	overflow: hidden;
+}
+
+#slide li {
+	float: left;
+}
+
+span.prev, span.next {
+	position: absolute;
+	display: inline-block;
+	width: 142px;
+	color: #fff;
+	font-size: 48px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 450px;
+	opacity: .8;
+	cursor: pointer;
+}
+
+span.prev {
+	top: 0;
+	left: 0;
+	bottom: 0;
+}
+
+span.prev:hover {
+	background: linear-gradient(to right,rgba(0,0,0,.5),transparent);
+}
+
+span.next {
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+
+span.next:hover {
+	background: linear-gradient(to left,rgba(0,0,0,.5),transparent);
+}
+
+div.identification {
+	position: absolute;
+	width: 100px;
+	text-align: center;
+	left: calc(50% - 50px);
+	bottom: 24px;
+}
+
+.identification span {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border: 1px solid #fff;
+	border-radius: 4px;
+	background: transparent;
+}
+
+.identification span.active {
+	background: #07a7e1;
+}

@@ -1,0 +1,47 @@
+#main {
+	width: 60%;
+	margin: 2rem auto;
+}
+
+.task-description {
+	margin-top: 1rem;
+	border: 1px solid #f00;
+	position: relative;
+}
+
+.task-description li {
+	margin: 1rem 0;
+}
+
+.anchor {
+	color: #f00;
+	font-weight: bold;
+}
+
+.prev, .demo {
+	position: absolute;
+	right: 1rem;
+	width: 8rem;
+	height: 2rem;
+	line-height: 2rem;
+	text-align: center;
+	border-radius: 5px;
+	color: #fff;
+	background: #5cb85c;
+}
+
+.prev {
+	top: 1rem;
+}
+
+.demo {
+	bottom: 1rem;
+}
+
+.wrap {
+	margin-top: 2rem;
+}
+
+#img {
+	width: 100%;
+}

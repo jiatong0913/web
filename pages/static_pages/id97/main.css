@@ -1,0 +1,482 @@
+@charset utf-8;
+
+html, body, div, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, q, pre, address, code, img, input, textarea, dl, dt, dd, 
+ol, ul, li, fieldset, form, legend, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+
+hr {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	line-height: 1.8;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	color: #3077c1;
+	text-decoration: underline;
+}
+
+.clear:after {
+	display: block;
+	content: '';
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+.flowleft {
+	float: left;
+}
+
+.flowright {
+	float: right;
+}
+
+
+
+/*----------------全局样式-----------------------*/
+
+
+html {
+	font: 16px/1 "微软雅黑";
+	background: #f5f5f5;
+}
+
+.wrap {
+	width: 1030px;
+	margin: 0px auto;
+	padding: 0 10px;
+	overflow: hidden;
+}
+
+#main .wrap {
+	padding: 0;
+}
+
+/*-------------------header样式---------------*/
+
+div.h-description {
+	border-bottom: 1px solid #ccc;
+	font-size: 12px;
+	color: #666;
+	line-height: 2.5;
+	background: #fff;
+}
+
+a.red {
+	color: #f00;
+}
+
+a.red:hover {
+	color: #f00;
+}
+
+div.h-logo {
+	padding: 20px;
+	background: #fff;
+}
+
+div.search {
+	float: right;
+}
+
+input.searchbox {
+	width: 240px;
+	height: 32px;
+	border: 1px solid #ccc;
+	text-indent: 10px;
+	font-size: 14px;
+	vertical-align: bottom;
+	float: left;
+}
+
+a.search-btn {
+	display: inline-block;
+	vertical-align: bottom;
+	width: 72px;
+	height: 32px;
+	line-height: 32px;
+	font-size: 14px;
+	text-align: center;
+	color: #fff;
+	background: #337ab7;
+	float: left;
+}
+
+div.quick-search {
+	clear: both;
+	font-size: 12px;
+	color: #666;
+}
+
+div.quick-search a {
+	padding: 5px;
+}
+
+div.h-nav {
+	color: #fff;
+	font-size: 14px;
+	line-height: 1.5;
+	background: #07a7e1;
+}
+
+div.h-nav nav a {
+	padding: 10px 20px;
+	float: left;
+}
+
+div.h-nav nav a.active {
+	background: #0095bb;
+}
+
+div.h-nav nav a:hover {
+	color: #fff;
+	background: #0095bb;
+	text-decoration: none;
+}
+
+
+/*------------------轮播图样式---------------------------*/
+
+#carrousel {
+	margin-top: 10px;
+}
+
+.c-box {
+	border: 10px solid transparent;
+	margin: 0 auto;
+	width: 1030px;
+	height: 450px;
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+}
+
+div.slide-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	overflow: hidden;
+}
+
+div.active {
+	display: block;
+}
+
+div.prev {
+	display: block;
+	top: 0;
+	left: -1010px;
+}
+
+div.next {
+	display: block;
+	top: 0;
+	left: 1010px;
+}
+
+span.prev, span.next {
+	position: absolute;
+	display: inline-block;
+	width: 142px;
+	color: rgba(255,255,255,.7);
+	font-size: 48px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 450px;
+	cursor: pointer;
+}
+
+span.prev {
+	top: 0;
+	left: 0;
+	bottom: 0;
+}
+
+span.prev:hover {
+	background: linear-gradient(to right,rgba(0,0,0,.5),transparent);
+	color: #fff;
+}
+
+span.next {
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+
+span.next:hover {
+	background: linear-gradient(to left,rgba(0,0,0,.5),transparent);
+	color: #fff;
+}
+
+div.identification {
+	position: absolute;
+	width: 100px;
+	text-align: center;
+	left: calc(50% - 50px);
+	bottom: 24px;
+}
+
+.identification span {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	background: transparent;
+	cursor: pointer;
+}
+
+.identification span.active {
+	border: 1px solid #07a7e1;
+	background: #07a7e1;
+}
+
+/*--------------------------------*/
+
+
+.n-r {
+	padding: 5px 10px;
+	overflow: hidden;
+}
+
+.ad {
+	padding: 10px 20px;
+	background: #fff;
+}
+
+.ad a {
+	display: block;
+}
+
+.ad img {
+	width: 100%;
+	vertical-align: bottom;
+}
+
+div.zone {
+	overflow: hidden;
+}
+
+div.zone h2 {
+	border-left: 4px solid #dd5862;
+	text-indent: 10px;
+	font-size: 20px;
+	color: #666;
+	line-height: 1;
+	float: left;
+}
+
+div.zone a {
+	font-size: 14px;
+	color: #666;
+	float: right;
+}
+
+/*---------------图片样式---------------*/
+
+div.box {
+	width: 20%;
+	padding: 10px;
+	float: left;
+}
+
+div.content {
+	width: 100%;
+}
+
+div.content:hover {
+	box-shadow: 0 2px 3px #ccc;
+}
+
+div.img {
+	width: 100%;
+	height: 264px;
+	overflow: hidden;
+	position: relative;
+}
+
+div.img img {
+	width: 100%;
+	height: 100%;
+}
+
+span.clarity {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 3px;
+	color: #fff;
+	font-size: 12px;
+	line-height: 1;
+}
+
+span.c-high {
+	background: #09c878;
+}
+
+span.c-super {
+	background: #337ab7;
+}
+
+.mask {
+	position: absolute;
+	background: rgba(0,0,0,.5);
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+	display: none;
+}
+
+.content h6 {
+	font-size: 12px;
+	color: #888;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: clip;
+}
+
+.content a.title {
+	font-size: 14px;
+	color: #555;
+}
+
+.content div.type {
+	font-size: 12px;
+	color: #888;
+}
+
+.content div.type a {
+	padding: 1px 5px;
+	border-radius: 3px;
+	background: #ddd;
+}
+
+#more {
+	margin: 10px;
+	height: 32px;
+	line-height: 32px;
+	border-radius: 3px;
+	background: #5cb85c;
+	text-align: center;
+	box-sizing: padding-box;
+}
+
+#more a {
+	font-size: 14px;
+	color: #fff;
+}
+
+
+/*----------------footer样式------------------*/
+
+#footer {
+	margin-top: 15px;
+	padding-bottom: 10px;
+	border-top: 1px solid #ccc;
+	background: #eee;
+}
+
+.col3 {
+	margin-top: 10px;
+	padding: 10px;
+	width: 33.3%;
+	float: left;
+	font-size: 12px;
+	color: #666;
+}
+
+.col3 p {
+	margin: 10px 0;
+}
+
+.col3 a {
+	margin: 0 5px;
+}
+
+
+/*----------------浮动窗广告样式----------------*/
+
+.float-window-left, .float-window-right {
+	position: fixed;
+	top: 250px;
+	width: 120px;
+	height: 320px;
+}
+
+.float-window-left {
+	left: 300px;
+}
+
+.float-window-right {
+	right: 300px;
+}
+
+.f-ad img {
+	width: 100%;
+	height: 100%;
+}
+
+.f-btn {
+	height: 20px;
+	background: #ccc;
+	overflow: hidden;
+	position: relative;
+}
+
+.f-btn button {
+	position: absolute;
+	right: 0;
+	bottom: -2px;
+	border-radius: 2px;
+	font-size: 10px;
+	color: #333;
+	cursor: pointer;
+}
+
+.pop-ad {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+
+.pop-ad-box {
+	position: relative;
+}
+
+.pop-ad-box img {
+	width: 100%;
+	vertical-align: bottom;
+}
+
+#ad3-close {
+	display: inline-block;
+	width: 50px;
+	height: 30px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	cursor: pointer;
+}

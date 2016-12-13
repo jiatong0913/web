@@ -116,5 +116,58 @@ function getNodes(element, parent) {
 	return parentNode.getElementsByTagName(element);
 }
 
+function getEleSiblings(element) {
+	var siblings = element.parentNode.childNodes;
+	var eleSiblings = [];
+	for (var i = 0, l = siblings.length; i < l; i++) {
+		if (siblings[i].nodeType === 1 && siblings[i] !== element) {
+			eleSiblings.push(siblings[i]);
+		}
+	}
+	return eleSiblings;
+}
+
+
+
+
+
+
+
+
+/* 数据操作 */
+
+
+//数组和对象的深度拷贝
+function deepCopy(param) {
+	var copy;
+
+	//获取参数的类型
+	var type = Object.prototype.toString.call(param).slice(8, -1).toLowerCase();
+	if (type === 'array') {
+		//数组的深度拷贝
+
+		copy = [];
+		for (var i = 0; i < param.length; i++) {
+
+			//对每一项递归深度拷贝
+			copy.push(deepCopy(param[i]));
+		}
+		return copy;
+	} else if (type ==='object') {
+		//对象的深度拷贝
+
+		copy = {};
+		for (item in param) {
+
+			//对每一项递归深度拷贝
+			copy[item] = deepCopy(param[item]);
+		}
+		return copy;
+	} else {
+		//其他任意类型的深度拷贝（包括基本类型以及对象的子类型如：function、Date、RegExp、Math等）
+		copy = param;
+		return copy;
+	}
+}
 
 

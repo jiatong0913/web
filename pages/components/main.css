@@ -1,0 +1,61 @@
+@charset utf-8;
+
+body {
+	background: #eee;
+}
+
+#main .wrap {
+	margin: 2rem auto;
+	padding: 5rem;
+	box-sizing: border-box;
+	min-width: 980px;
+	width: 70%;
+	height: 50rem;
+	background: #fff;
+	color: #333;
+	overflow: hidden;
+}
+
+.box {
+	margin: 0 auto;
+	width: 80%;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 2rem;
+	background: rgba(200, 200, 215, .5);
+	border-radius: 1rem;
+}
+
+.wrap h2 {
+	font-size: 1.75rem;
+}
+
+.wrap span {
+	font-size: 1.2rem;
+}
+
+.item {
+	margin: 0 auto;
+	padding-top: 3rem;
+	width: 80%;
+	text-align: center;
+	font-size: 1.2rem;
+}
+
+.item li {
+	padding: 1rem;
+}
+
+.item a {
+	padding: .5rem 1rem;
+}
+
+.item a:hover {
+	color: #fff;
+	background: rgba(0, 0, 0, .7);
+}
+
+
+
+
+

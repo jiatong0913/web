@@ -1,0 +1,45 @@
+div, dl, dt, dd {
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	width: 500px;
+	margin: 50px auto;
+	border: 1px solid #f00;
+}
+
+#menu dl {
+	text-align: center;
+	font: 24px Arial;
+	height: 30px;
+	overflow: hidden;
+	transition: all .5s ease-in-out;
+}
+
+#menu dl.unfold {
+	height: 120px;
+}
+
+#menu dt {
+	height: 30px;
+	background: #58a;
+}
+
+#menu dl span {
+	display: inline-block;
+	margin-left: 10px;
+	border: 5px solid transparent;
+	border-left: 5px solid #000;
+	vertical-align: middle;
+}
+
+#menu dl.unfold span {
+	border: 5px solid transparent;
+	border-top: 5px solid #000;
+}
+
+#menu dd {
+	height: 30px;
+	background: #eee;
+}

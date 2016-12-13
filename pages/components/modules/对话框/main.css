@@ -1,0 +1,61 @@
+#container {
+	width: 500px;
+	margin: 50px auto;
+	border: 1px solid #f00;
+}
+
+.left, .right {
+	overflow: hidden;
+}
+
+.logo {
+	width: 100px;
+	height: 100px;
+	position: relative;
+}
+
+.left .logo {
+	background: url(0.png) no-repeat;
+	background-size: cover;
+	float: left;
+}
+
+.right .logo {
+	background: url(1.png) no-repeat;
+	background-size: cover;
+	float: right;
+}
+
+.left .dialog {
+	float: left;
+	margin: 20px;
+}
+
+.right .dialog {
+	float: right;
+	margin: 20px;
+}
+.rect {
+	width: 200px;
+	box-sizing: border-box;
+	padding: .5rem;
+	background: #ccc;
+	color: #000;
+	font: 14px/1.5 "微软雅黑";
+	border-radius: 10px;
+	position: relative;
+}
+.tail {
+	position: absolute;
+	top: 20%;
+}
+.left .tail {
+	left: -18px;
+	border: 8px solid transparent;
+	border-right: 10px solid #ccc;
+}
+.right .tail {
+	right: -18px;
+	border: 8px solid transparent;
+	border-left: 10px solid #ccc;
+}

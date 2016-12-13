@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>carrousel</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div id="main">
+		<div class="wrap">
+			<section class="description">
+				<h2>一种优化的轮播图</h2>
+				<ul>传统轮播图是以overflow为hilien的div包含一个很长的ul，然后通过ul的横向移动来实现
+					<li>优点：逻辑简单</li>
+					<li>缺点：无法实现不相邻图片的无缝轮播</li>
+				</ul>
+				<ul>优化过的轮播图是以单个具有index属性的div为容器，通过判断点击目标的index属性，将点击目标直接置于当前图片的相邻位置，再移动目标来实现
+					<li>优点：可以实现不相邻图片的无缝轮播</li>
+					<li>缺点：增加了Dom操作</li>
+				</ul>	
+			</section>
+			<section id="carrousel">
+				<div id="slide" class="c-box">
+					<div class="slide-img active" index="1"><a href="#"><img src="images/carrousel/0.jpg" alt="机械师2：复活"></a></div>
+					<div class="slide-img" index="2"><a href="#"><img src="images/carrousel/1.jpg" alt="爵迹"></a></div>
+					<div class="slide-img" index="3"><a href="#"><img src="images/carrousel/2.jpg" alt="名侦探柯南：纯黑的噩梦"></a></div>
+					<div class="slide-img" index="4"><a href="#"><img src="images/carrousel/3.jpg" alt="萨利机长"></a></div>
+					<div class="slide-img" index="5"><a href="#"><img src="images/carrousel/4.jpg" alt="圆梦巨人"></a></div>
+					<span id="prev" class="prev">&lt;</span>
+					<span id="next" class="next">&gt;</span>
+					<div id="identification" class="identification">
+						<span index="1" class="active"></span>
+						<span index="2"></span>
+						<span index="3"></span>
+						<span index="4"></span>
+						<span index="5"></span>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>swot</title>
+	<style>
+		div, dl, dt, dd {
+			margin: 0;
+			padding: 0;
+		}
+		#container {
+			margin: 0 auto;
+			width: 800px;
+			overflow: hidden;
+			position: relative;
+		}
+
+		#container div {
+			width: 400px;
+			height: 300px;
+			box-sizing: border-box;
+			float: left;
+		}
+
+		.s {
+			border-right: 1px solid #ccc;
+			border-bottom: 1px solid #ccc;
+		}
+
+		.w {
+			border-left: 1px solid #ccc;
+			border-bottom: 1px solid #ccc;
+		}
+
+		.o {
+			border-right: 1px solid #ccc;
+			border-top: 1px solid #ccc;
+		}
+
+		.t {
+			border-left: 1px solid #ccc;
+			border-top: 1px solid #ccc;
+		}
+
+		#container div.circle {
+			position: absolute;
+			width: 200px;
+			height: 200px;
+			background: #ccc;
+			border: 20px solid #fff;
+			border-radius: 100px;
+			top: calc(50% - 100px);
+			left: calc(50% - 100px);
+		}
+
+		dl {
+			margin: 100px auto;
+			width: 60%;
+			font-size: 20px;
+			text-align: center;
+		}
+
+		dt {
+			margin-bottom: 20px;
+			font-weight: 700;
+			font-size: 24px;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div class="s">
+			<dl>
+				<dt>Strength:</dt>
+				<dd>擅长逻辑</dd>
+				<dd>热爱学习</dd>
+				<dd>实践能力强</dd>
+			</dl>
+		</div>
+		<div class="w">
+			<dl>
+				<dt>Weakness:</dt>
+				<dd>性情急躁</dd>
+				<dd>爱面子</dd>
+				<dd>心里容不下事情</dd>
+			</dl>
+		</div>
+		<div class="o">
+			<dl>
+				<dt>Oppotunity:</dt>
+				<dd>互联网蓬勃发展</dd>
+				<dd>前端领域扩张</dd>
+				<dd>前端需求增加</dd>
+			</dl>
+		</div>
+		<div class="t">
+			<dl>
+				<dt>Oppotunity:</dt>
+				<dd>零基础转型</dd>
+				<dd>更年轻毕业生的挑战</dd>
+				<dd>科班出身同行的挑战</dd>
+			</dl>
+		</div>
+		<div class="circle"></div>
+	</div>
+</body>
+</html>

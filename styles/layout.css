@@ -50,7 +50,7 @@ hr {
 	margin: 0.5rem 1rem 0 5rem;
 	width: 5rem;
 	height: 5rem;
-	background: #eee;
+	background: transparent;
 	border-radius: 2.5rem;
 	box-sizing: border-box;
 }
@@ -95,6 +95,12 @@ hr {
 	font-size: 1.2rem;
 	color: #eee;
 	text-shadow: 2px 2px 5px #58a;
+}
+
+#nav a:nth-child(n+5) {
+	cursor: not-allowed;
+	color: #999;
+	text-shadow: none;
 }
 
 #nav a:hover {
