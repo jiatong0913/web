@@ -1,0 +1,30 @@
+html, body, div {
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	width: 500px;
+	height: 500px;
+	margin: 200px auto;
+}
+
+.clouds {
+	padding: 100px;
+	box-sizing: border-box;
+	width: 100%;
+	height: 80%;
+	border: 1px solid red;
+	position: relative;
+}
+
+.form {
+	margin: 100px;
+}
+
+a.style {
+	position: absolute;
+	text-decoration: none;
+	font-family: '微软雅黑';
+	font-size: 20px;
+}

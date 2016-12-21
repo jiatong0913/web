@@ -1,0 +1,43 @@
+html, body, div {
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	width: 500px;
+	height: 500px;
+	margin: 200px auto;
+}
+
+.heart {
+	width: 200px;
+	height: 200px;
+	margin: 100px auto;
+	background: #f00;
+	transform: rotate(45deg);
+	position: relative;
+}
+
+.heart::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: -100px;
+	left: 0;
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	background: #f00;
+}
+
+.heart::after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -100px;
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	background: #f00;
+}

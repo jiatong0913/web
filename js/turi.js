@@ -116,6 +116,17 @@ function getNodes(element, parent) {
 	return parentNode.getElementsByTagName(element);
 }
 
+function getEleChildren(element) {
+	var children = element.childNodes;
+	var eleChildren = [];
+	for (var i = 0, l = children.length; i < l; i++) {
+		if (children[i].nodeType === 1) {
+			eleChildren.push(children[i]);
+		}
+	}
+	return eleChildren;
+}
+
 function getEleSiblings(element) {
 	var siblings = element.parentNode.childNodes;
 	var eleSiblings = [];

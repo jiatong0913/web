@@ -1,0 +1,43 @@
+#container {
+	width: 1000px;
+	height: 300px;
+	margin: 100px;
+}
+.abs {
+	margin-left: 20px;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	position: relative;
+}
+.arrow {
+	margin-left: 20px;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	position: relative;
+}
+.arrow::before {
+	content: '';
+	display: block;
+	width: 15px;
+	height: 10px;
+	background: #5cb85c;
+	transform: skew(45deg);
+	box-shadow: 0 0 20px #58a;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.arrow::after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 15px;
+	height: 10px;
+	background: #5cb85c;
+	transform: skew(-45deg);
+	box-shadow: 0 0 20px #58a;
+}
