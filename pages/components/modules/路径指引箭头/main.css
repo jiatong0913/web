@@ -41,3 +41,9 @@
 	transform: skew(-45deg);
 	box-shadow: 0 0 20px #58a;
 }
+#container2 .arrow::before {
+	transform: skew(-45deg);
+}
+#container2 .arrow::after {
+	transform: skew(45deg);
+}

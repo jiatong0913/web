@@ -182,3 +182,64 @@ function deepCopy(param) {
 }
 
 
+// 深度输出对象和数组
+function dump(param) {
+	if (Object.prototype.toString.call(param).slice(8, -1).toLowerCase() === 'object') {
+
+		// 若传入参数是对象
+		var s = '{';
+		for (var item in param) {
+			s = s + item +': ' + dump(param[item]) + ', ';
+		}
+
+		// 去掉最后的那个', '
+		s = s.slice(0, -2);
+		s += '}';
+	  return s;
+	} else if (Object.prototype.toString.call(param).slice(8, -1).toLowerCase() === 'array') {
+
+		// 若传入参数是数组
+		var s = '[';
+		for (var i = 0, l = param.length; i < l; i++) {
+			s = s + dump(param[i]) + ', ';
+		}
+		s = s.slice(0, -2);
+		s += ']';
+		return s;
+	} else {
+
+		// 若传入参数非数组或对象，则直接返回
+		return param;
+	}
+}
+
+// 比较两个对象/数组的值是否相同，或比较两个函数表达式的内容是否相同
+function compareRef(a, b) {
+
+	// 若比较的两个参数是对象或数组
+	if (typeof a === 'object' && typeof b === 'object') {
+
+		//获取参数的类型
+		var atype = Object.prototype.toString.call(a).slice(8, -1).toLowerCase();
+		var btype = Object.prototype.toString.call(b).slice(8, -1).toLowerCase();
+
+		// 若两者数据类型相同
+		if (atype === btype) {
+			for (var item in a) {
+
+				// 如果a[item]仍然是个数组、对象或函数，那么递归调用compareRef函数
+				// 如果a[item]是基本类型，那么直接比较即可
+				if (typeof a[item] === 'object' || typeof a[item] === 'function') {
+					compareRef(a[item], b[item]);
+				} else {
+					if (a[item] !== b[item]) {
+						return false;
+					}
+				}
+			}
+		}
+		return true; 
+	} else if (typeof a === 'function' && typeof b === 'function') {
+		return a.toString() === b.toString();
+	}
+}
